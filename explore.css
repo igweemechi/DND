@@ -1,0 +1,279 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --brand-primary-color:#278A22;
+    --brand-secondary-color:#0E5B0A;
+    --brand-other-color: rgb(108, 105, 105);
+    --grey-background:#d1cdcd;
+}
+section{
+    width: 100%;
+
+}
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    flex: 1;
+    padding: 0.5% 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 8;
+}
+nav img{
+    width: 120px;
+}
+
+ nav ul li{
+    display: inline-block;
+    padding: 4px 26px;
+    margin: 0px 5px;
+    border: 1px solid var(--brand-other-color);
+    border-radius: 30px;
+}
+ nav ul li a{
+    text-decoration: none;
+    color: var(--brand-other-color);
+}
+nav ul .explore{
+    background-color: #278a22;
+    color: #fff;
+    border: none;
+}
+nav ul .explore a{
+    color: #fff;
+}
+.menu-header .main-control{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-header .main-control div{
+    width: 200px;
+    height: 220px;
+    background-color: #0E5B0A;
+    margin: 15px;
+    overflow: hidden;
+}
+.menu-header .main-control div:hover{
+    scale: 1.2;
+    transition: all 0.5s;
+}
+.explore-menu{
+    width: 100%;
+    height: 100vh;
+    margin: 0px 0px 0px 0px;
+    background: linear-gradient(rgba(108, 105, 105, 0.326), rgba(108, 105, 105, 0.326)), url(./IMG/road-to-las-vegas-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.explore-menu h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 30px;
+    padding: 90px 0px 0px 0px;
+    color: #fff;
+}
+.explore-menu nav{
+    margin: 140px 0px 0px 0px;
+    height: 100vh;
+    background-color: transparent;
+}
+.explore-menu div{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+.explore-menu nav .main-content{
+    width: 30%;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(14, 91, 10, 0.896), rgba(14, 91, 10, 0.896)), url(./IMG/image.jpg);
+    border-radius: 20px;
+    position: fixed;
+}
+.explore-menu .main-content .main-content-box{
+    width: 300px;
+    height: 90px;
+    background-color: transparent;
+    padding: 15px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+}
+.explore-menu .main-content .main-content-box:hover{
+    border: 0.5px solid var(--brand-primary-color);
+}
+.explore-menu .main-content .main-content-box img{
+    width:400px;
+    height: 150px;
+    margin: -15px 10px 0px -15px;
+}
+.explore-menu .main-content hr{
+    border: 2px solid #fff;
+
+}
+.explore-menu .main-content .main-content-box .main-content-section{
+    align-items: center;
+}
+.explore-menu .main-content .main-content-box .main-content-section a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 0px 0px 0px;
+    line-height: 1;
+    font-weight: 500;
+    
+}
+.explore-menu .main-content .main-content-box .main-content-section p{
+    font-size: 10px;
+    color: #fff;
+    text-align:left;
+}
+.explore-menu .main-content .sign{
+    width: 300px;
+    height: 15px;
+    background-color: transparent;
+    padding: 15px;
+    margin: 0px 0px 180px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #fff;
+    box-shadow: 3px 6px 3px rgba(0, 0, 0, 0.277);
+}
+.explore-menu .main-content .sign:hover{
+    width: 300px;
+    height: 15px;
+    padding: 15px;
+    margin: 0px 0px 180px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: var(--brand-secondary-color);
+}
+.main-content .sign a{
+    text-decoration: none;
+    padding: 8px 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--brand-secondary-color);
+}
+.main-content .sign a:hover{
+    text-decoration: none;
+    padding: 8px 0px;
+    background-color: var(--brand-secondary-color);
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+}
+.main-focus{
+    width: 70%;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background-color: linear-gradient(rgba(14, 91, 10, 0.896), rgba(14, 91, 10, 0.896));
+    position: relative;
+    left: 33%;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+/* ::-webkit-scrollbar-track{
+    background: var(--brand-primary-color);
+     border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--grey-background);
+    border-radius: 30px;
+} */
+.main-focus .main-focus-box{
+    width: 200px;
+    height: 220px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 4px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-focus .main-focus-box .product-image{
+    /* position: relative;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20px; */
+    flex: 1;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+.main-focus .main-focus-box section{
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+    top: 85px;
+    left: -205px;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-transform: capitalize;
+}
+.main-focus .main-focus-box:hover{
+    scale: 1.2;
+    transition: all 0.8s;
+}
+
+.main-focus .main-focus-box section .profile-image{
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 20px;
+}
+.main-focus .main-focus-box section .profile-image:hover{
+    scale: 2;
+    transition: all 0.5s;
+}
+.main-focus .main-focus-box section div a{
+    font-size: 15px;
+    display: block;
+    text-wrap:wrap;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--brand-secondary-color);
+    letter-spacing: -1.5px;
+}
+.main-focus .main-focus-box section div p{
+    font-size: 9px;
+    position:absolute;
+    top: 25px;
+}
+#empty{
+    background-color: transparent;
+}

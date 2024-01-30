@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="IMG/DND ICON.ico">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>DND</title>
+</head>
+<body>
+  <div class="loading">
+    
+  </div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMG/DND LOGO.png" alt=""></a>
+            <ul>
+                <li class="explore"><a href="explore.html">Explore</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="type-location.html">Type Location</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+<div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <img src="IMG/slide-brand-1.jpg" class="slide-image">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="IMG/slide-brand-2.jpg" class="slide-image">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="IMG/slide-brand-3.jpg" class="slide-image">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="IMG/slide-brand-4.jpg" class="slide-image">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="IMG/slide-brand-5.jpg" class="slide-image">
+  </div>
+</div>
+
+<!-- <br> -->
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 6000); // Change image every 2 seconds
+    }
+    </script>
+    <section class="main-hero">
+        <p>Available Ready to Wear</p>
+        <div class="main-control">
+            <div><img src="IMG/1.png" alt=""></div>
+            <div><img src="IMG/2.png" alt=""></div>
+            <div><img src="IMG/3.png" alt=""></div>
+            <div><img src="IMG/4.png" alt=""></div>
+            <div><img src="IMG/5.png" alt=""></div>
+            <div><img src="IMG/6.png" alt=""></div>
+            <div><img src="IMG/7.png" alt=""></div>
+            <div><img src="IMG/8.png" alt=""></div>
+            <div><img src="IMG/9.png" alt=""></div>
+            <div><img src="IMG/10.png" alt=""></div>
+            <div><img src="IMG/11.png" alt=""></div>
+            <div><img src="IMG/12.png" alt=""></div>
+            <div><img src="IMG/13.png" alt=""></div>
+            <div><img src="IMG/IMG_6100.jpeg" alt=""></div>
+            <div><img src="IMG/IMG_6301.jpeg" alt=""></div>
+            <div><img src="IMG/14.png" alt=""></div>
+            <div><img src="IMG/15.png" alt=""></div>
+            <div><img src="IMG/16.png" alt=""></div>
+            <div><img src="IMG/17.png" alt=""></div>
+            <div><img src="IMG/18.png" alt=""></div>
+            <div><img src="IMG/19.png" alt=""></div>
+            <div><img src="IMG/20.png" alt=""></div>
+            <div><img src="IMG/fashion 1.jpg" alt=""></div>
+            <div><img src="IMG/fashion 2.jpg" alt=""></div>
+        </div>
+        <hr>
+        <div class="original">
+            <p>Original Fabrics by Manufactres</p>
+        <select name="category" id="category">
+            <option value=""> All category</option>
+            <option value="davi-va"><a href="#">DAVI VA</a></option>
+            <option value="vilsco"><a href="#">VILSCO</a></option>
+            <option value="cashmere"><a href="#">CASHMERE</a></option>
+            <option value="high-target"><a href="#">HIGH TARGET</a></option>
+        </select>
+        </div>
+        <div class="main-control">
+            <div class="div-1">
+              <img src="IMG/f-1.jpg" alt="">
+            </div>
+            <div class="div-1">
+              <img src="IMG/f-2.jpg" alt="">
+            </div>
+            <div class="div-1">
+              <img src="IMG/f-3.jpg" alt="">
+            </div>
+            <div class="div-1">
+              <img src="IMG/f-4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

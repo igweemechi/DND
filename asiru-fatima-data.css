@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --brand-primary-color:#278A22;
+    --brand-secondary-color:#0E5B0A;
+    --brand-other-color: rgb(108, 105, 105);
+    --grey-background:#d1cdcd;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background: url(IMG/f-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    flex: 1;
+    padding: 0.5% 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 8;
+}
+nav img{
+    width: 120px;
+}
+
+ nav ul li{
+    display: inline-block;
+    padding: 4px 26px;
+    margin: 0px 5px;
+    border: 1px solid var(--brand-other-color);
+    border-radius: 30px;
+}
+ nav ul li a{
+    text-decoration: none;
+    color: var(--brand-other-color);
+}
+nav ul .explore{
+    background-color: #278a22;
+    color: #fff;
+    border: none;
+}
+nav ul .explore a{
+    color: #fff;
+}
+.user-data{
+    width: 85%;
+    background-color: rgba(14, 91, 10, 0.908);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
+}
+.user-data .user-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.user-data .user-nav .user-image img{
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    padding: 2px;
+    margin-right: 70px;
+    margin-left: 120px;
+}
+.user-data .user-nav .user-information h1{
+    font-size: 80px;
+}
+.user-data .user-nav .user-information p{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.user-data .user-nav .user-information .button{
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    color: var(--brand-secondary-color);
+}
+.user-data .user-nav .user-information .button button{
+    margin-right:9px;
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--brand-secondary-color);
+    font-weight: 500;
+    border-radius: 40px;
+}
+.user-data .user-nav .user-information .button button:hover{
+    background-color: var(--brand-primary-color);
+    color: #fff;
+}
+.user-data .user-nav .user-information .button i{
+    position: relative;
+    left: 40px;
+}
+.user-data .user-nav .user-information .button button:focus{
+    outline: none;
+}
+.designer-work{
+    width: 85%;
+    height: 60%;
+    padding: 15px;
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    overflow: scroll;
+}
+
+.designer-work div{
+    width: 180px;
+    height: 200px;
+    background-color: #000
+    ;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0E5B0A;
+    border-radius: 30px;
+}
